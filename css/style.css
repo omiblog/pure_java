@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: "Roboto Mono";
+  font-size: 24px;
+  scroll-behavior: smooth;
+}
+.intro{
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient( rgba(0,0,0,0.8), rgba(0,0,0,0.8)), url(../images/hero-bcg.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+}
+.intro h1{ color: #ffffff; margin:auto; }
+.container{ width: 85%; margin: auto; }
+.container h1{ text-align: center; margin: 20px; }
+.row{ 
+  padding: 30px; 
+  margin: 30px 0px;  
+  display: flex; 
+  justify-content: space-between;
+  opacity: 0;
+
+  transition: all 1s ease-in-out;
+}
+.active{
+  opacity: 1;
+  
+}
+.col {
+    flex-basis: 40%;
+}
+.row p{ font-size: 18px; line-height: 30px;}
+img {
+    width: 100%;
+    object-fit: cover;
+}
